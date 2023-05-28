@@ -1,3 +1,53 @@
+p{
+    margin: 0cm;
+}
+
 body{
     font-family: Quicksand;
+    margin: 0;
+    padding: 0;
+}
+.big-container{
+    display: flex;
+    flex-wrap: wrap;
+    border-collapse: collapse;
+    width: 100%;
+    gap: 10px;
+}
+.session-container{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    height: auto;
+    min-width: 450px;
+    border: 2px solid black;
+    box-sizing: border-box;
+    flex: 1;
+}
+.drill{
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 40%;
+    box-sizing: border-box;
+    min-width: 200px;
+    margin: auto;
+}
+.drills{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-self: flex-start;
+    width: 100%;
+    gap: 30px;
+    flex: 1;
+    box-sizing: border-box;
+}
+
+.description{
+    gap: 20px;
 }
