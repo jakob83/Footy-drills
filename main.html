@@ -11,14 +11,24 @@
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="big-container">
+    <header>
+        <div>
+            <h1 class="h-überschrift">Build your training sessions</h1>
+        </div>
+    </header>
+    <div class="quote">
+            <i>"The only thing that will stop you from 
+            fulfilling your dreams is you."<br> -Tom Bradley
+            </i>
+    </div>    
+    <div class="big-container" id="bigContainer">
         <div class="session-container">
             <h3 class="sess-name">Session Name</h3>
             <p class="Benefits">Whats it for</p>
     
             <div class="drills">
                 <div class="drill number1">
-                    <p class="drill-name">Drill name</p>
+                    <strong class="drill-name">Drill name</strong>
                     <div class="description">
                         <p>type: ball control/dribling</p>
                         <p>items: 8 cones</p>
@@ -27,7 +37,7 @@
                 </div>
     
                 <div class="drill number2">
-                    <p class="drill-name">Drill name 2</p>
+                    <strong class="drill-name">Drill name 2</strong>
                     <div class="description">
                         <p>type: wall-passing</p>
                         <p>items: 3 cones</p>
@@ -36,7 +46,7 @@
                 </div>
     
                 <div class="drill number3">
-                    <p class="drill-name">Drill name 3</p>
+                    <strong class="drill-name">Drill name 3</strong>
                     <div class="description">
                         <p>type: driblling</p>
                         <p>items: 4 cones</p>
@@ -48,36 +58,53 @@
     
     
         <div class="session-container">
-            <h3 class="sess-name">Session Name</h3>
-            <p class="Benefits">Whats it for</p>
+            <h3 class="sess-name"><input type="text" placeholder="session-name" id="sessionNameInput"></h3>
+            <p class="Benefits"><input type="text" placeholder="session-benefits" id="sessionBenefitsInput"></p>
     
             <div class="drills">
                 <div class="drill number1">
-                    <p class="drill-name">Drill name</p>
+                    <p class="drill-name"><input type="text" placeholder="drill-name" id="drillNameInput"></p>
                     <div class="description">
-                        <p>type: ball control/dribling</p>
-                        <p>items: 8 cones</p>
+                        <p>type: <input type="text" placeholder="drill-type" id="drillTypeInput"></p>
+                        <p>items: <input type="text" placeholder="needed material" id="drillItemsInput"></p>
                     </div>
-                    <a href="link" class="link">link to video</a>
+                    <input type="text" class="link-input" placeholder="link to video" id="drillLinkInput">
                 </div>
-    
-                <div class="drill number2">
-                    <p class="drill-name">Drill name 2</p>
+
+                <div class="drill number2" id="drill2">
+                    <p class="drill-name"><input type="text" placeholder="drill-name" id="drillNameInput2"></p>
                     <div class="description">
-                        <p>type: wall-passing</p>
-                        <p>items: 3 cones</p>
+                        <p>type: <input type="text" placeholder="drill-type" id="drillTypeInput2"></p>
+                        <p>items: <input type="text" placeholder="needed material" id="drillItemsInput2"></p>
                     </div>
-                    <a href="link" class="link">link to video</a>
+                    <input type="text" class="link-input" placeholder="link to video" id="drillLinkInput2">
                 </div>
-    
-                <div class="drill number3">
-                    <p class="drill-name">Drill name 3</p>
+                <div class="drill number3" id="drill3">
+                    <p class="drill-name"><input type="text" placeholder="drill-name" id="drillNameInput3"></p>
                     <div class="description">
-                        <p>type: driblling</p>
-                        <p>items: 4 cones</p>
+                        <p>type: <input type="text" placeholder="drill-type" id="drillTypeInput3"></p>
+                        <p>items: <input type="text" placeholder="needed material" id="drillItemsInput3"></p>
                     </div>
-                    <a href="link" class="link">link to video</a>
+                    <input type="text" class="link-input" placeholder="link to video" id="drillLinkInput3">
                 </div>
+                <div class="drill number4" id="drill4">
+                    <p class="drill-name"><input type="text" placeholder="drill-name" id="drillNameInput"4></p>
+                    <div class="description">
+                        <p>type: <input type="text" placeholder="drill-type" id="drillTypeInput4"></p>
+                        <p>items: <input type="text" placeholder="needed material" id="drillItemsInput4"></p>
+                    </div>
+                    <input type="text" class="link-input" placeholder="link to video" id="drillLinkInput4">
+                </div>
+                <div class="drill number5" id="drill5">
+                    <p class="drill-name"><input type="text" placeholder="drill-name" id="drillNameInput5"></p>
+                    <div class="description">
+                        <p>type: <input type="text" placeholder="drill-type" id="drillTypeInput5"></p>
+                        <p>items: <input type="text" placeholder="needed material" id="drillItemsInput5"></p>
+                    </div>
+                    <input type="text" class="link-input" placeholder="link to video" id="drillLinkInput5">
+                </div>
+                <button id="createButton" class="create-button">create session</button>
+                <input type="text" class="drill-counter" placeholder="how many drills?" id="drillCounter">
             </div>
         </div>
     </div>

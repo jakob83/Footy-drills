@@ -1,17 +1,61 @@
-p{
+p, h1{
     margin: 0cm;
+}
+a{
+    margin: 0;
 }
 
 body{
     font-family: Quicksand;
     margin: 0;
     padding: 0;
+    background-color: darkolivegreen;
+}
+header{
+    display: flex;
+    height: 300px;
+    width: 100%;
+    background-image: url(pics-video/football-ball.jpg);
+    background-position: center;
+    flex-direction: column;
+    align-items: flex-start;
+    color: rgb(255, 255, 255);
+}
+
+header div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    background-color: darkolivegreen;
+    padding: 10px;
+}
+.h-überschrift{
+    font-size: 40px;
+
+}
+.quote{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.quote i{
+    width:400px;
+    font-size: 30px;
+    background-color: rgb(229, 236, 229);
+    border-radius: 100px;
+    padding: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-top: 50px;
 }
 .big-container{
     display: flex;
     flex-wrap: wrap;
     border-collapse: collapse;
     width: 100%;
+    margin-top: 100px;
     gap: 10px;
 }
 .session-container{
@@ -21,9 +65,11 @@ body{
     align-items:center;
     height: auto;
     min-width: 450px;
-    border: 2px solid black;
     box-sizing: border-box;
     flex: 1;
+    background-color: rgb(209, 216, 221);
+    border-radius: 10px;
+    position: relative;
 }
 .drill{
     gap: 20px;
@@ -40,8 +86,8 @@ body{
     margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-self: flex-start;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     gap: 30px;
     flex: 1;
@@ -50,4 +96,92 @@ body{
 
 .description{
     gap: 20px;
+}
+
+input{
+    font-family: Quicksand;
+}
+.sess-name input{
+    font-weight: 900;
+    height: 40px;
+    font-size: 18px;
+}
+.Benefits input{
+    height: 40px;
+    font-size: 15px;
+}
+
+.drill-name input{
+    height: 25px;
+    font-weight: 700;
+    font-size: 15px;
+}
+.description input{
+    height: 20px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.link-input{
+    height: 20px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.create-button{
+    position: absolute;
+    right: 20px;
+    top: 100px;
+    background-color: rgb(229, 236, 229);
+    border: none;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 10px;
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 600;
+    transition: 0.15s;
+}
+.create-button:hover{
+    background-color: darkolivegreen;
+    color: white;
+    cursor: pointer;
+}
+.create-button:active{
+    background-color: rgb(229, 236, 229);
+    color: black;
+}
+.session-container input{
+    border-radius: 10px;
+    border: none;
+}
+
+.drill-counter{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background-color: rgb(229, 236, 229);
+    border: none;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 10px;
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 600;
+    transition: 0.15s;
+}
+.createDrill:hover{
+    background-color: darkolivegreen;
+    color: white;
+    cursor: pointer;
+}
+.createDrill:active{
+    background-color: rgb(229, 236, 229);
+    color: black;
+}
+
+.drill.number2, .drill.number3, .drill.number3, .drill.number4, .drill.number5{
+    display: none;
 }
