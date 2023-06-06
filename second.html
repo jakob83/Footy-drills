@@ -5,10 +5,93 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>build your sessions</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="build.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
+    <nav class="nav"> 
+        <button class="save-drills" id="saveDrills">save drills</button>  
+        <button class="delete-btn">delete</button>
+    </nav>
+    <div class="crt-container">
+        <header>
+            <img src="pics-video/logo.webp" class="logo">
+            <p class="ü">Create your individual session here!</p>
+        </header>
+    <div class="session-container user">
+        <h3 class="sess-name"><input type="text" placeholder="session-name" id="sessionNameInput"></h3>
+        <p class="Benefits"><input type="text" placeholder="session-benefits" id="sessionBenefitsInput"></p>
+
+        <div class="drills">
+            <div class="drill number1" id="drill0">
+                <p class="drill-name"><input type="text" placeholder="drill-name" id="drillNameInput"></p>
+                <div class="description">
+                    <p>type: <input type="text" placeholder="drill-type" id="drillTypeInput"></p>
+                    <p>items: <input type="text" placeholder="needed material" id="drillItemsInput"></p>
+                </div>
+                <input type="text" class="link-input" placeholder="link to video" id="drillLinkInput">
+            </div>
+
+
+
+            <div class="drill number2" id="drill1">
+                <p class="drill-name"><input type="text" placeholder="drill-name" id="drillNameInput2"></p>
+                <div class="description">
+                    <p>type: <input type="text" placeholder="drill-type" id="drillTypeInput2"></p>
+                    <p>items: <input type="text" placeholder="needed material" id="drillItemsInput2"></p>
+                </div>
+                <input type="text" class="link-input" placeholder="link to video" id="drillLinkInput2">
+            </div>
+
+
+
+            <div class="drill number3" id="drill2">
+                <p class="drill-name"><input type="text" placeholder="drill-name" id="drillNameInput3"></p>
+                <div class="description">
+                    <p>type: <input type="text" placeholder="drill-type" id="drillTypeInput3"></p>
+                    <p>items: <input type="text" placeholder="needed material" id="drillItemsInput3"></p>
+                </div>
+                <input type="text" class="link-input" placeholder="link to video" id="drillLinkInput3">
+            </div>
+
+
+
+            <div class="drill number4" id="drill3">
+                <p class="drill-name"><input type="text" placeholder="drill-name" id="drillNameInput4"></p>
+                <div class="description">
+                    <p>type: <input type="text" placeholder="drill-type" id="drillTypeInput4"></p>
+                    <p>items: <input type="text" placeholder="needed material" id="drillItemsInput4"></p>
+                </div>
+                <input type="text" class="link-input" placeholder="link to video" id="drillLinkInput4">
+            </div>
+
+
+
+            <div class="drill number5" id="drill4">
+                <p class="drill-name"><input type="text" placeholder="drill-name" id="drillNameInput5"></p>
+                <div class="description">
+                    <p>type: <input type="text" placeholder="drill-type" id="drillTypeInput5"></p>
+                    <p>items: <input type="text" placeholder="needed material" id="drillItemsInput5"></p>
+                </div>
+                <input type="text" class="link-input" placeholder="link to video" id="drillLinkInput5">
+            </div>
+            
+            <button id="createButton" class="create-button">create session</button>
+            <input type="text" class="drill-counter" placeholder="how many drills?" id="drillCounter">
+        </div>
+    </div>
+
+    </div>
+
+
     
+    <div class="big-container" id="bigContainer">
+
+  
+    </div>
 
     <script src="build.js"></script>
 </body>

@@ -9,21 +9,30 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="build.css">
 </head>
 <body>
     <header>
-        <div>
-            <h1 class="h-überschrift">Build your training sessions</h1>
+
+        <div class="überschrift">
+            <h1 class="h-überschrift">SessBuilder</h1>
         </div>
     </header>
-    <div class="quote">
+    <div class="explain">
+        <div class="quote">
             <i>"The only thing that will stop you from 
             fulfilling your dreams is you."<br> -Tom Bradley
             </i>
-    </div>  
-    <button id="buildYourSessBtn">build your own sessions</button>  
-    <div class="big-container" id="bigContainer">
-        <div class="session-container">
+        </div>  
+        <p class="explanation">This webpage is a tool for building your own individual football training sessions.
+        If you are a baller on the grind or just want to improve some aspects of your game, 
+        this is the perfect tool to use. It lets you build and organize your sessions. You can also include videos from youtube or selfmade to your drills. This tool will also let you deside how many drills you'd like to do in one session. This can also help you to find the motivation required to go on the pitch and train individualy. 
+        It isn't easy to go and train by yourself, but i know you are going to make it!</p>
+        
+        <button id="buildYourSessBtn" class="build-btn">build your own sessions</button> 
+        <p class="ex">here is an example of how your session could look like!</p>
+        <img src="pics-video/arrow.png" alt="">
+        <div class="session-container-example">
             <h3 class="sess-name">Session Example</h3>
             <p class="Benefits">Example training</p>
     
@@ -55,78 +64,9 @@
                     <a href="link" class="link">link to video</a>
                 </div>
             </div>
-        </div>
-    
-    
-        <div class="session-container">
-            <h3 class="sess-name"><input type="text" placeholder="session-name" id="sessionNameInput"></h3>
-            <p class="Benefits"><input type="text" placeholder="session-benefits" id="sessionBenefitsInput"></p>
-    
-            <div class="drills">
-                <div class="drill number1" id="drill0">
-                    <p class="drill-name"><input type="text" placeholder="drill-name" id="drillNameInput"></p>
-                    <div class="description">
-                        <p>type: <input type="text" placeholder="drill-type" id="drillTypeInput"></p>
-                        <p>items: <input type="text" placeholder="needed material" id="drillItemsInput"></p>
-                    </div>
-                    <input type="text" class="link-input" placeholder="link to video" id="drillLinkInput">
-                </div>
-
-
-
-                <div class="drill number2" id="drill1">
-                    <p class="drill-name"><input type="text" placeholder="drill-name" id="drillNameInput2"></p>
-                    <div class="description">
-                        <p>type: <input type="text" placeholder="drill-type" id="drillTypeInput2"></p>
-                        <p>items: <input type="text" placeholder="needed material" id="drillItemsInput2"></p>
-                    </div>
-                    <input type="text" class="link-input" placeholder="link to video" id="drillLinkInput2">
-                </div>
-
-
-
-                <div class="drill number3" id="drill2">
-                    <p class="drill-name"><input type="text" placeholder="drill-name" id="drillNameInput3"></p>
-                    <div class="description">
-                        <p>type: <input type="text" placeholder="drill-type" id="drillTypeInput3"></p>
-                        <p>items: <input type="text" placeholder="needed material" id="drillItemsInput3"></p>
-                    </div>
-                    <input type="text" class="link-input" placeholder="link to video" id="drillLinkInput3">
-                </div>
-
-
-
-                <div class="drill number4" id="drill3">
-                    <p class="drill-name"><input type="text" placeholder="drill-name" id="drillNameInput"4></p>
-                    <div class="description">
-                        <p>type: <input type="text" placeholder="drill-type" id="drillTypeInput4"></p>
-                        <p>items: <input type="text" placeholder="needed material" id="drillItemsInput4"></p>
-                    </div>
-                    <input type="text" class="link-input" placeholder="link to video" id="drillLinkInput4">
-                </div>
-
-
-
-                <div class="drill number5" id="drill4">
-                    <p class="drill-name"><input type="text" placeholder="drill-name" id="drillNameInput5"></p>
-                    <div class="description">
-                        <p>type: <input type="text" placeholder="drill-type" id="drillTypeInput5"></p>
-                        <p>items: <input type="text" placeholder="needed material" id="drillItemsInput5"></p>
-                    </div>
-                    <input type="text" class="link-input" placeholder="link to video" id="drillLinkInput5">
-                </div>
-                
-                <button id="createButton" class="create-button">create session</button>
-                <input type="text" class="drill-counter" placeholder="how many drills?" id="drillCounter">
-            </div>
-        </div>
+        </div> 
     </div>
- 
-
-
-
-
-
+  
     <script src="main.js"></script>
 </body>
 </html>

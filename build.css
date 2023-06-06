@@ -1,0 +1,252 @@
+p, h1{
+    margin: 0cm;
+}
+a{
+    margin: 0;
+}
+
+body{
+    font-family: Quicksand;
+    margin: 0;
+    padding: 0;
+    background-color: darkolivegreen;
+    position: relative;
+    height: max-content;
+}
+.big-container{
+    display: flex;
+    flex-wrap: wrap;
+    border-collapse: collapse;
+    margin-top: 100px;
+    gap: 10px;
+    justify-content: center;
+    margin-right: 21%;
+    
+}
+.session-container{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    height: auto;
+    min-width: 450px;
+    box-sizing: border-box;
+    flex: 1;
+    background-color: rgb(209, 216, 221);
+    border-radius: 10px;
+    position: relative;
+    max-width: 50%;
+    padding: 100px;
+    min-width: 49%;
+}
+.drill.real {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 40%;
+    box-sizing: border-box;
+    min-width: 200px;
+    margin: auto;
+}
+.drill{
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 40%;
+    box-sizing: border-box;
+    min-width: 200px;
+    margin: auto;
+}
+.drills{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 30px;
+    flex: 1;
+    box-sizing: border-box;
+}
+
+.description{
+    gap: 20px;
+}
+
+input{
+    font-family: Quicksand;
+}
+.sess-name input{
+    font-weight: 900;
+    height: 40px;
+    font-size: 18px;
+}
+.Benefits input{
+    height: 40px;
+    font-size: 15px;
+}
+
+.drill-name input{
+    height: 25px;
+    font-weight: 700;
+    font-size: 15px;
+}
+.description input{
+    height: 20px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.link-input{
+    height: 20px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.create-button{
+    position: absolute;
+    right: 20px;
+    top: 100px;
+    background-color: rgb(229, 236, 229);
+    border: none;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 10px;
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 600;
+    transition: 0.15s;
+}
+.create-button:hover{
+    background-color: darkolivegreen;
+    color: white;
+    cursor: pointer;
+}
+.create-button:active{
+    background-color: rgb(229, 236, 229);
+    color: black;
+}
+.session-container input{
+    border-radius: 10px;
+    border: none;
+}
+
+.drill-counter{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background-color: rgb(229, 236, 229);
+    border: none;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 10px;
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 600;
+    transition: 0.15s;
+}
+.createDrill:hover{
+    background-color: darkolivegreen;
+    color: white;
+    cursor: pointer;
+}
+.createDrill:active{
+    background-color: rgb(229, 236, 229);
+    color: black;
+}
+
+.drill.number2, .drill.number3, .drill.number3, .drill.number4, .drill.number5{
+    display: none;
+}
+
+.save-drills{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    transition: 0.15s;
+    width: 50%;
+}
+
+
+.save-drills:hover{
+    background-color: darkolivegreen;
+    color: white;
+    cursor: pointer;
+}
+.save-drills:active{
+    background-color: white;
+    color: black;
+}
+
+.crt-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 800px;
+    margin-right: 20%;
+}
+.session-container.user{
+    flex: 0;
+}
+.crt-container .ü{
+    font-size: 40px;
+    color: white;
+    font-family: Quicksand;
+    font-weight: 600;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.crt-container header{
+    background-color: green;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+    height: 100%;
+}
+.nav{
+    position: absolute;
+    top:0;
+    right:0;
+    background-color: rgb(209, 216, 221);
+    height: 120%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.delete-btn{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    transition: 0.15s;
+    width: 50%
+}
+.delete-btn:hover{
+    background-color: darkolivegreen;
+    color: white;
+    cursor: pointer;
+}
+.delete-btn:active{
+    background-color: white;
+}

@@ -10,6 +10,7 @@ body{
     margin: 0;
     padding: 0;
     background-color: darkolivegreen;
+    
 }
 header{
     display: flex;
@@ -48,17 +49,9 @@ header div{
     padding: 30px;
     padding-left: 60px;
     padding-right: 60px;
-    margin-top: 50px;
 }
-.big-container{
-    display: flex;
-    flex-wrap: wrap;
-    border-collapse: collapse;
-    width: 100%;
-    margin-top: 100px;
-    gap: 10px;
-}
-.session-container{
+
+.session-container-example{
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -66,133 +59,58 @@ header div{
     height: auto;
     min-width: 450px;
     box-sizing: border-box;
-    flex: 1;
     background-color: rgb(209, 216, 221);
     border-radius: 10px;
-    position: relative;
+    padding: 50px;
+    
 }
-.drill.real {
-    gap: 20px;
+.explanation{
+    width: 50%;
+    font-size: 24px;
+    color: rgb(209, 216, 221);
+}
+@media(max-width: 900px){
+    .explanation{
+        width: 80%;
+    }
+    .session-container-example{
+        width: 90%;
+    }
+    .überschrift{
+        width: fit-content;
+    }
+}
+.explain{
+    height: fit-content;
     display: flex;
     flex-direction: column;
-    align-items: baseline;
-    justify-content: space-between;
-    width: 40%;
-    box-sizing: border-box;
-    min-width: 200px;
-    margin: auto;
-}
-.drill{
-    gap: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
-    justify-content: space-between;
-    width: 40%;
-    box-sizing: border-box;
-    min-width: 200px;
-    margin: auto;
-}
-.drills{
-    margin-top: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    gap: 30px;
-    flex: 1;
-    box-sizing: border-box;
-}
+    gap: 70px;
+    align-items:center;
+    margin-top: 100px;
 
-.description{
-    gap: 20px;
 }
-
-input{
-    font-family: Quicksand;
-}
-.sess-name input{
-    font-weight: 900;
-    height: 40px;
-    font-size: 18px;
-}
-.Benefits input{
-    height: 40px;
-    font-size: 15px;
-}
-
-.drill-name input{
-    height: 25px;
-    font-weight: 700;
-    font-size: 15px;
-}
-.description input{
-    height: 20px;
-    font-size: 15px;
-    font-weight: 400;
-}
-
-.link-input{
-    height: 20px;
-    font-size: 15px;
-    font-weight: 400;
-}
-
-.create-button{
-    position: absolute;
-    right: 20px;
-    top: 100px;
-    background-color: rgb(229, 236, 229);
-    border: none;
-    padding: 20px;
+.build-btn{
     padding-left: 40px;
     padding-right: 40px;
-    border-radius: 10px;
-    font-family: Quicksand;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: none;
+    border-radius:10px;
+    background-color: green;
+    color: white;
     font-size: 20px;
-    font-weight: 600;
     transition: 0.15s;
 }
-.create-button:hover{
-    background-color: darkolivegreen;
-    color: white;
-    cursor: pointer;
+.build-btn:hover{
+    background-color: rgb(209, 216, 221);
+    color:black;
 }
-.create-button:active{
-    background-color: rgb(229, 236, 229);
-    color: black;
+.build-btn:active{
+    background-color: green;
+    color:white;
 }
-.session-container input{
-    border-radius: 10px;
-    border: none;
-}
-
-.drill-counter{
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    background-color: rgb(229, 236, 229);
-    border: none;
-    padding: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
-    border-radius: 10px;
-    font-family: Quicksand;
-    font-size: 20px;
-    font-weight: 600;
-    transition: 0.15s;
-}
-.createDrill:hover{
-    background-color: darkolivegreen;
-    color: white;
-    cursor: pointer;
-}
-.createDrill:active{
-    background-color: rgb(229, 236, 229);
-    color: black;
-}
-
-.drill.number2, .drill.number3, .drill.number3, .drill.number4, .drill.number5{
-    display: none;
+.explain .ex{
+    color: rgb(209, 216, 221);
+    font-weight: bold;
+    font-size: 30px;
 }
