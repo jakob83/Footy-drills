@@ -13,12 +13,20 @@
 </head>
 <body>
     <nav class="nav"> 
+        <img src="pics-video/logo.webp" class="logo">
+        <div class="nav-btns">
+        </div>
+        <button class="delete-btn">home</button>
+        <button class="delete-btn">create session</button>
         <button class="save-drills" id="saveDrills">save drills</button>  
-        <button class="delete-btn">delete</button>
+        <div class="delete-container">
+            <button class="delete-btn" id="deleteBtn">delete</button>
+            <div class="inpt-container" id="inptContainer"><input type="text" placeholder="delete wich session?" id="deleteInput"><button class="delete-complete" id="finalDelete"></button></div>
+        </div>
+        </div>
     </nav>
     <div class="crt-container">
         <header>
-            <img src="pics-video/logo.webp" class="logo">
             <p class="ü">Create your individual session here!</p>
         </header>
     <div class="session-container user">

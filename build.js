@@ -103,7 +103,7 @@ createButton.addEventListener("click", function(){
             <p>type: ${drillInput[count][1].value}</p>
             <p>items: ${drillInput[count][2].value}</p>
         </div>
-        <a href="link" class="link">${drillInput[count][0].value}</a>`
+        <a href="link" class="link">${drillInput[count][3].value}</a>`
 
         drills.appendChild(drill[count])
         sessContainer.appendChild(drills)
@@ -130,8 +130,25 @@ document.addEventListener('DOMContentLoaded', function(event) {
     bigContainer.innerHTML = storedData
   });
 
-// document.getElementById("deleteBtn").addEventListener("click", function(wich){
-//    document.getElementsByClassName("session-name")[wich]
-// })
+document.getElementById("finalDelete").addEventListener("click",  function remove(){
+    localStorage.clear()
 
+    DeleteNum = document.getElementById("deleteInput")
+    document.getElementsByClassName("session-container")[DeleteNum.value].remove()
+    localStorage.setItem("sessContainer", bigContainer.innerHTML)
+    
+    let storedData = localStorage.getItem('sessContainer');
+    bigContainer.innerHTML = storedData
+
+    location.reload()
+ })
+
+document.getElementById("deleteBtn").addEventListener("click", function(){
+    document.getElementById("inptContainer").style.display = "flex";
+    setTimeout(function() {
+        document.getElementById("inptContainer").style.opacity = '1';
+      }, 10)
+})
   
+
+
